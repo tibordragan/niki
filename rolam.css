@@ -1,0 +1,137 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: url('./photos/IMG_8201%203%20full.jpg') no-repeat center;
+  background-size: cover;
+  width: 100vw;
+  height: 90vh;
+  position: relative;
+  
+  
+}
+
+
+
+
+.maincontent{
+  position: absolute;
+  top: 100%;
+}
+
+
+
+
+section{
+  color: #222;
+  background-color: white;
+}
+
+
+
+
+
+
+section p{
+  margin: 0 auto;
+  width: 80%;
+  font-size: 1rem;
+  font-family: 'Red Hat Display', sans-serif;
+  color: #222;
+  text-align: justify;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+
+
+}
+
+
+.monolog-container{
+  position: absolute;
+  display: table;
+  top: 50%;
+  height: 17%;
+  width: 70%;
+  background-color:hsla(222,30%,110%, .3);
+  box-shadow: 1px 2px 35px 1px black;
+  animation-name: example;
+  animation-duration: 4s;  
+}
+
+@keyframes example {
+  0% { opacity: 0; left: 800px}
+  25% {opacity: 0;}
+  50% { left: 0px;}
+  75% { left: 0px;}
+  100% { left: 0px;}
+}
+
+
+
+.monolog{
+  font-family: 'Abril Fatface', cursive;
+  font-size: .9rem;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 500;
+  color: #222;
+  animation-name: example;
+  animation-duration: 6s;  
+
+  
+}
+
+
+
+
+.sign{
+  font-family: 'Qwigley', cursive;
+  position: absolute;
+  top: 58%;
+  left: 80px;
+  width: 100%;
+  animation-name: mymove;
+  animation-duration: 5s;  
+}
+
+@keyframes mymove {
+  0% { opacity: 0; left: 100px}
+  25% {left: 10px;}
+
+}
+
+
+
+
+
+@media screen and (min-width: 900px) {
+  section{
+  width: 100%;
+  }
+  section p{
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+  }
+  .navbar-nav{
+  margin: 2rem;
+ }
+  .monolog-container{
+  width: 40%;  
+  height: 30%;
+  top: 40%;
+  }
+  .monolog{
+  font-size: 2rem;
+  }
+  .sign{
+  font-size: 1.7rem;
+  width: 100vw;
+  left: -350px;
+  }
+
+}

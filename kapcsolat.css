@@ -1,0 +1,118 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: url('./photos/portrait bw.jpg') no-repeat  center;
+  background-size: cover;
+  width: 100vw;
+  height: 90vh;
+  position: relative;
+}
+
+
+
+.maincontent{
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  width: 100vw;
+  line-height: 2.8rem;
+}
+
+.maincontent p a{
+  color: #222;
+}
+
+section p{
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 80%;
+  font-size: 1rem;
+  font-family: 'Red Hat Display', sans-serif;
+  color: #222;
+  text-align: center;
+  
+
+}
+
+
+.monolog-container{
+   position: absolute;
+  display: table;
+  top: 40%;
+  height: 17%;
+  width: 70%;
+  background-color:hsla(222,30%,110%, .3);
+  box-shadow: 1px 2px 35px 1px black;
+  animation: example 7s;
+}
+
+
+@keyframes example{
+  0%{opacity: 0; left: 600px;}
+  25% {left: 0px;}
+  50% {left: 0px;}
+  75% {left: 0px;}
+  100% {left: 0px;}
+}
+
+.monolog{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.3rem;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 500;
+  letter-spacing: .2rem;
+  color: #222;
+  animation: example 4s;
+  
+}
+
+
+footer{
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  font-size: .7rem;
+  font-family: 'Red Hat Display', sans-serif;
+  color: #222;
+
+}
+
+footer a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+
+
+
+@media screen and (min-width: 900px) {
+  section{
+  width: 100%;
+  }
+  section p{
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  }
+  .navbar-nav{
+  margin: 2rem;
+ }
+  .monolog-container{
+  width: 40%;  
+  height: 30%;
+  top: 40%;
+  }
+  .monolog{
+  font-size: 2.1rem;
+  letter-spacing: .2rem;
+  }
+  
+}
+
+

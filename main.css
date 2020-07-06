@@ -1,0 +1,95 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+body{
+  background: url('./photos/photo-1505226755626-21044548b8aa.jpeg') no-repeat center;
+  background-size: cover;
+  color: hsla(222,30%,110%, .85);
+  height: 100vh;
+  width: 100vw;
+  }
+
+.text{
+  position: absolute;
+  height: 65vh;
+}
+
+
+.hero-text-wrapper {
+  position: absolute;
+  bottom: 30%;
+  width: 100vw;
+  animation: mymove 3s;
+  animation-timing-function: ease;
+  
+}
+@keyframes mymove {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+.tagline{
+  font-size: .7rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-family: 'Amiri', serif;
+  color: hsla(222,30%,110%, .85);
+  }
+
+
+
+.hero-text h1{
+ 
+  font-size: 1.4rem;
+  letter-spacing: .2rem;
+  font-family: 'Cormorant Upright', serif;
+  color: hsla(222,30%,110%, .85);
+  text-transform: uppercase;
+  animation: mymove 4s;
+  animation-timing-function: ease-in;
+  }
+
+@media screen and (min-width: 900px) {
+
+.navbar-nav{
+  margin: 2rem;
+  }
+  .tagline{
+    position: absolute;
+    bottom: 30px;
+    left: 240px;
+    font-size: 1rem;
+  }
+  .hero-text h1{
+    position: absolute;
+    bottom: -8px;
+    left: 290px;
+    font-size: 2.2rem;
+  }
+}
+
+
+.fa{
+  color: hsla(222,30%,110%, .85);
+}
+
+.contact-link{
+  width: 100vw;
+  position: absolute;
+  top: 92%;
+  
+}
+
+.contact-link a{
+  margin: .1rem
+}
+  
+
+
+
